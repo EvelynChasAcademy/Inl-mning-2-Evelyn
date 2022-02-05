@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<!-- Gjorde ett nytt CSS-dokument då jag redan hade gjort så mycket med forms på index.html på nyhetsbrevet. Ville inte förstöra det jag redan gjort. 
+  Och stilen från nyhetsbrevet passade inte på denna sida.-->
+
+  <!-- Kopierade in den nya nav-baren-->
+  <header>
+    <nav class="navbar">
+        <a href="index.html" class="nav-branding"><img src="img/storelogo.png" alt="Storelogo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="cartlink">Go to Cart</a>
+            </li>
+        </ul>
+<div class="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+    </nav>
+</header>
+<!--Slut på navbar-->
+
+<!--Breadcrumbs så att man ser vart man är på sidan, och lätt kan klicka sig tillbaka till förstasidan-->
+<div><p class="homecontact"><a href="index.html"> <strong>Home ></strong> </a> Contact</p></div>
+<!--Slut på breadcrumbs-->
+
+<!-- Formulär för att kontakta websidan. Har använt mig av textformulär, dropdownlista och submitknapp. Sedan senast har jag gjort så att den förminskar sig responsivt vid mindre skärmar.-->
+  <center><div>
+  <br>
+    <form onsubmit="myFunction()">
+      <h1>Send a message </h1>
+      <br>
+        <input type="text" id="namn" name="namn" value="Your name"><br><br>
+        
+    <input type="text" id="email" name="email" value="example@mail.com"><br><br>
+    <select name="topic" id="topic" value="Choose a topic">
+        <option value="topic">Choose a topic</option>
+        <option value="pear">Returns</option>
+        <option value="orange">Delivery</option>
+        <option value="kiwi">Other</option>
+    </select><br><br>
+
+<textarea name="meddelande" id="meddelande" cols="65" rows="10">Your message...</textarea><br>
+
+    <input type="submit" value="Send" class="submit">
+    </form>
+</div></center>
+<!--Slut på formulär-->
+
+
+
+<script src="script.js"></script>
+<body>

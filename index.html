@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evelyns webshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- För tillgängligheten har jag använt mig av 1.1.1. (A) Vilket är att beskriva allt innehåll som inte är text med text. 
+  Detta kan du se på alt-texterna till alla bilder. Jag har även använt mig av 1.4.5 (AA) där jag använder text
+istället för bilder för att visa text. Detta kan du se i classen container där "Women's collection" och "Some catchy selling text" 
+inte är en del av bilden vilket hade varit enklast. Utan det är text skriven i HTML.-->
+
+
+
+ <!--Gjorde om hela navigationsbaren för att kunna göra den responsiv med en hamburgermeny >900px. Herregud vad trial and error jag haft på detta!! Försökt och gjort om en miljon gånger känns det som. Men nu ska det funka! Kollade tutorials på youtube.-->
+ <header>
+    <nav class="navbar">
+        <a href="index.html" class="nav-branding"><img src="img/storelogo.png" alt="Storelogo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="cartlink">Go to Cart</a>
+            </li>
+        </ul>
+<div class="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+    </nav>
+</header>
+  <!--Här tar navigationsbar slut-->
+
+  <!--Sedan senast har jag gjort om så att denna del här under är responsiv med hjälp av css. Har använt mig av % istället för px för att bestämma position. -->
+<section>
+  <div class="container">
+  <img class="img1" src="img/bakgrund.png" alt="Green background with a black t-shirt" style="width:100%;">
+  <div class="bottom-right2"><p class="pstyle2">Women's COLLECTION </p></div>
+  <div class="bottom-right"><p class="pstyle">Some catchy selling text</p></div>
+<button class="bottom-rightbutton" id="pstyle3">SHOP NOW</button>
+</div></section>
+<!--Slut på stora bilden och texten.-->
+<br>
+<!-- Rubrik för olika klädesplagg. Använt mig av classes för att styla texten snyggt. -->
+<div class="centertextwhite"><h1>New arrivals</h1> <h3>Find your style in our new collection</h3> </div>
+<!-- Slut på rubrik-->
+
+<!--Gjorde om dessa bilder så att de ej längre hade hovereffekt. Lättare när man går ner till mobileview att se priserna under. Samt att dessa bilder nu matchar
+bättre med de under. Klasserna heter Mobile eftersom jag först endast tänkte ha utan hovereffekt i mobile, men ändrade mig eftersom det passade bättre in på sidan när det matchade med
+bilderna under. Även lagt in beskrivande alt-texter-->
+<br>
+<section>
+    <div class="mobilecontainer">
+<div class="mobilechild">
+      <figure><a href="#"><img src="img/model1.jpg" alt="Model woman with grey coat and trousers on. Standing casually in full view." class="mobilechild"></a>
+        <figurecaption class="centertextwhite3">
+          <p>Coat set</p><h3>1599 kr</h3>
+        </figurecaption>
+      </figure></div>
+      <div class="mobilechild">
+        <figure><a href="#"><img src="img/model2.jpg" alt="Model woman with grey coat and grey trousers with white details at the bottom. Wearing high plateu heels. Raising one arm, looking happy in full view." class="mobilechild"></a>
+          <figurecaption class="centertextwhite3">
+            <p>Coat set</p><h3>1599 kr</h3>
+          </figurecaption>
+        </figure></div>
+        <div class="mobilechild">
+          <figure><a href="#"><img src="img/model3.jpg" alt="Model woman with grey coat. Looking in the distance. Half view from hips and up." class="mobilechild"></a>
+            <figurecaption class="centertextwhite3">
+              <p>Coat set</p><h3>1599 kr</h3>
+            </figurecaption>
+          </figure></div>
+          <div class="mobilechild">
+            <figure><a href="#"><img src="img/model4.jpg" alt="Full view of model woman wearing a bright yellow flowy dress with flowers on it." class="mobilechild"></a>
+              <figurecaption class="centertextwhite3">
+                <p>Coat set</p><h3>1599 kr</h3>
+              </figurecaption>
+            </figure></div>
+
+  
+  </div>
+</section>
+<hr/>
+
+<!--Här använde jag mig av grid med parent och children och figure/figurecaption. Samt img och a-element. Och class samt hover för att styla texten under.-->
+
+<br><section>
+  <div><h6 class="centertextwhite">Trending fashion</h6><h1 class="centertextwhite2">Best sellers</h1></div>
+    <br>
+
+<div class="grid-conbs">
+  <div class="conbsimage">
+  <figure><a href="#"><img src="img/bestseller1.jpg" alt="Woman sitting outside with jeans trousers and jeans jacket. The jacket has fluffy pink arms and neck." class="conbsimage"></a>
+    <figurecaption class="centertextwhite3">
+      <p>Jacket<h3>599 kr</h3>
+    </figurecaption>
+  </figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller2.jpg" alt="Model woman with view from thighs and up. Standing half in shadows. Wearing brown coat with a black belt in the waist." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Coat<h3>999 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller7.jpg" alt="Woman sitting on a small pillar. Wearing pink elbow length gloves, a white cropped spaghetti top and cosy long pink pants." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Pants<h3>199 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller4.jpg" alt="Woman standing facing camera. View from knees and up. wearing an open pink shirt with a purple top underneath. Black flowy pants." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Shirt<h3>299 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller5.jpg" alt="woman standing leaning with one arm against a door handle. View from hips and up. Wearing a white open shirt with a white lace brah underneath." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Bra<h3>299 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller6.jpg" alt="Two women standing looking to the right. View from knees and up. Both wearing coats. One of them a pink one, and the other a green one." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Jacket<h3>499 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller3.jpg" alt="Woman in full view leaning against a red wall. Wearing a grey waistcoat with a blue jacket underneath. Grey trousers with white details on the bottom." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Pants<h3>599 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+<div class="conbsimage">
+<figure><a href="#"><img src="img/bestseller8.jpg" alt="Woman in full view sitting on a barrel. Wearing white boots with black details, and a white sweater." class="conbsimage"></a>
+  <figurecaption class="centertextwhite3">
+    <p>Shoes<h3>799 kr</h3>
+  </figurecaption>
+</figure>
+</div>
+
+</div>
+</section>
+<br>
+
+<!--Slut på bestsellerbilder-->
+
+
+<!-- Här gjorde jag en footer med hjälp av flexbox. La även in ett form för nyhetsbrev. Har stylat om mycket med hjälp av classes men även id. Sedan sist har jag gjort denna del responsiv så att vissa delar försvinner om man förminskar skärmen, och att de lägger sig annorlunda.-->
+<footer>
+  <hr>
+<div class="parent-footer">
+  <div class="child-footer1"> <img src="img/storelogo.png" alt="Storelogo"><p>Something about the company and how good they are. </p></div>
+  <div class="child-footer2"><h3 id="h3space">Quick links</h3> <nav><ul class="nav_links1">
+    <br>
+    <li><a href="#">About</a></li>
+    <br>
+    <li><a href="#">Blogs</a></li>
+    <br>
+    <li><a href="contact.html">Contact</a></li>
+    <br>
+    <li><a href="#">FAQ</a></li></ul></nav>
+  </div>
+  <div class="child-footer2"><h3 id="h3space">Shopping</h3> <nav><ul class="nav_links1">
+    <br>
+    <li><a href="#">Delivery</a></li>
+    <br>
+    <li><a href="#">Return and exhanges</a></li>
+    <br>
+    <li><a href="#">Payment methods</a></li>
+    <br>
+    <li><a href="#">Länk</a></li></ul></nav>
+  </div>
+ 
+  <div class="child-footer3"><h3 id="h3space">Newsletter</h3>
+    <br>
+    <p>Sign up for our newsletter! </p>
+    <br>
+    <form>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" value="example@gmail.com"><br>
+      <input type="submit" value="Sign up" class="submit">
+    </form>
+
+    
+  
+</div>
+</footer>
+ <!-- Slut på footer-->
+
+ <script src="script.js"></script>
+<hr>
+</body>
+</html>
